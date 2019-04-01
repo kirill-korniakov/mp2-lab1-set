@@ -29,3 +29,13 @@ TEST(TRatio, can_create_another_ratio)
     EXPECT_EQ(num, r.GetNumerator());
     EXPECT_EQ(den, r.GetDenominator());
 }
+
+TEST(TRatio, cannot_give_zero_as_den)
+{
+    // Arrange
+    const int num = 1;
+    const int den = 0;
+
+    // Act & Assert
+    EXPECT_ANY_THROW(TRatio r(num, den));
+}
