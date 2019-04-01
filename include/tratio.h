@@ -10,6 +10,8 @@ public:
     int GetNumerator();
     int GetDenominator();
 private:
+    int num;
+    int den;
 };
 
 #endif

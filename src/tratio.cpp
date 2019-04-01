@@ -4,14 +4,16 @@
 
 TRatio::TRatio(int num, int den)
 {
+    this->num = num;
+    this->den = den;
 }
 
 int TRatio::GetNumerator()
 {
-    return 2;
+    return num;
 }
 
 int TRatio::GetDenominator()
 {
-    return 3;
+    return den;
 }
